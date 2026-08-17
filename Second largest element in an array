@@ -1,0 +1,13 @@
+int[] arr = {12, 5, 8, 20, 3, 15};
+		int first = arr[0];
+		int sec = Integer.MIN_VALUE;
+		for(int i=1;i<arr.length;i++) {
+			if(arr[i]>first) {
+				sec = first;
+				first = arr[i];
+				
+			}else if(arr[i]>sec && arr[i]!=first) {
+				sec = arr[i];
+			}
+		}
+		System.out.println(sec);
